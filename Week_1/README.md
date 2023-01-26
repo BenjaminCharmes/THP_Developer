@@ -6,6 +6,8 @@ Before launching into large Frameworks to make a web application, a small update
 
 <div align="center">
 
+  [⬅️ - Back to the previous training](https://github.com/BenjaminCharmes/THP_FullStack)
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   [Go to Day 1️⃣ - ➡️](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_1/Day_1)
 
 </div>
