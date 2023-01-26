@@ -45,9 +45,9 @@ Here is the repository of all my projects from the Developer bootcamp training a
 
 - [**Day 1:** Variables, functions and methods](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_1/Day_1)
 - [**Day 2:** Good practice and the environment](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_1/Day_2)
-- [**Day 3:** Classes 1/3](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_1/Day_3)
-- [**Day 4:** Classes 2/3](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_1/Day_4)
-- [**Day 5:** Classes 3/3](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_1/Day_5)
+- [**Day 3:** Classes 1/3](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_1/Day_3_to_5)
+- [**Day 4:** Classes 2/3](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_1/Day_3_to_5)
+- [**Day 5:** Classes 3/3](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_1/Day_3_to_5)
 
 
 ### [:heavy_check_mark: **Week 2:** Introduction to Algorithms](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_2)
