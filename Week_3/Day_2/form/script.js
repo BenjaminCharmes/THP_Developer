@@ -84,7 +84,7 @@ form.addEventListener("submit", e => {
     if (!errors) {
     form.submit();
     }
-    });
+  });
     
     // Fonction pour afficher les erreurs
     function displayError(input, message) {

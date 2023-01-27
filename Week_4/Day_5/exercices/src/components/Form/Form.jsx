@@ -1,24 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-function Form() {
-  const [searchQuery, setSearchQuery] = useState('');
+function RecipeDisplay() {
+  const [recipe, setRecipe] = useState({});
 
-  const handleChange = (event) => {
-    setSearchQuery(event.target.value.toLowerCase());
+  const handleClick = async () => {
+    try {
+        const response = await fetch('https://api.example.com/random-recipe');
+        const data = await response.json();
+        setRecipe(data);
+    } catch (error) {
+        console.log(error);
+    }
   };
 
   return (
-    <form>
-      <label>Try to scream 🙀 ➡️</label>
-      &nbsp;
-      <input
-        type="text"
-        value={searchQuery}
-        onChange={handleChange}
-        placeholder="..."
-      />
-    </form>
+    <div>
+      <button onClick={handleClick}>Suggest a recipe</button>
+      {recipe.title && (
+        <div>
+          <h2>{recipe.title}</h2>
+          <img src={recipe.image} alt={recipe.title} />
+          <a href={recipe.url}>View the recipe</a>
+        </div>
+      )}
+    </div>
   );
 }
 
-export default Form;
+export default RecipeDisplay;

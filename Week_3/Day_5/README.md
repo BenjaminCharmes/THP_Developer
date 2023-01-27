@@ -14,7 +14,7 @@ In order to get a good start on React next week, it is important to understand t
 
 <div align="center">
 
-  [🔙 - Back to week 4️⃣](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_3)
+  [🔙 - Back to week 3️⃣](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_3)
 
   [🔙 - Back to home page](https://github.com/BenjaminCharmes/THP_Developer)
 
