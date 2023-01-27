@@ -1,0 +1,12 @@
+$bg-color: #242424;
+$primary-color: #fff;
+$title-color: #a2d1fc;
+
+body {
+    background-color: $bg-color;
+    color: $primary-color;
+}
+
+h1 {
+    color: $title-color;
+}

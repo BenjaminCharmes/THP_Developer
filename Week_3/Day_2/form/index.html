@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+
+  <form id="form-inscription">
+    <label for="nom">Nom:</label>
+    <input type="text" id="nom" name="nom">
+    <span class="error" id="nomError"></span>
+    
+    <label for="prenom">Prenom:</label>
+    <input type="text" id="prenom" name="prenom">
+    <span class="error" id="prenomError"></span>
+    
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age">
+    <span class="error" id="ageError"></span>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <span class="error" id="emailError"></span>
+    
+    <label for="confirm-email">Confirmer email:</label>
+    <input type="email" id="confirm-email" name="confirm-email">
+    <span class="error" id="confirmEmailError"></span>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <span class="error" id="passwordError"></span>
+    
+    <label for="confirm-password">Confirmer password:</label>
+    <input type="password" id="confirm-password" name="confirm-password">
+    <span class="error" id="confirmPasswordError"></span>
+    
+    <label for="cgu">J'accepte les CGU</label>
+    <input type="checkbox" id="cgu" name="cgu">
+    <span class="error" id="cguError"></span>
+    
+    <input type="submit" value="Envoyer">
+</form>
+
+<script href="script.js"></script>
+
+</body>
+
+</html>

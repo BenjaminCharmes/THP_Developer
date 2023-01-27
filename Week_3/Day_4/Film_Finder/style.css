@@ -1,0 +1,14 @@
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  padding: 20px;
+  z-index: 99;
+}
+
+main.popup_active {
+  filter: blur(5px);
+}

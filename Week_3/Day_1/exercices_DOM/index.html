@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header class=" " id="header">
+
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" id="accueil" aria-current="page">Accueil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="menu">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="photos">Photos</a>
+      </li>
+    </ul>
+
+  </header>
+
+  <main class=" " id="main">
+
+    <div id="accueil_page" style="text-align:center; display:block">
+      <h1>Produits frais et bio !</h1>
+      <img class="rounded" src="./assets/images/produits_frais.jpg" alt="Produit Frais et bio !" style="display:block; margin:auto" height="700px">
+    </div>
+
+    <div id="menu_page" style="text-align:center; display:none">
+      <h1>Voici notre menu de produit frais et bio !</h1>
+      <p id="menu1_content"></p>
+      <p id="menu2_content"></p>
+      <p id="menu3_content"></p>
+      <button id="btn_menu" type="button" class="btn btn-primary">Marre de ce menu ? Changez-le !</button>
+    </div>
+
+    <div id="photos_page" style="display:none" class="album py-5 bg-light" >
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm" width="250px" height="150px">
+              <img id="img1" class="rounded" src="./assets/images/pexels-chan-walrus-958545.jpg" alt="Photo d'un bon plat frais et bio !" width="100%" height="225" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm" width="250px" height="150px">
+              <img id="img2" class="rounded" src="./assets/images/pexels-ash-376464.jpg" alt="Photo d'un bon plat frais et bio !" width="100%" height="225" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm" width="250px" height="150px">
+              <img id="img3" class="rounded" src="./assets/images/pexels-ella-olsson-1640773.jpg" alt="Photo d'un bon plat frais et bio !" width="100%" height="225" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm" width="250px" height="150px">
+              <img id="img4" class="rounded" src="./assets/images/pexels-lisa-fotios-1279330.jpg" alt="Photo d'un bon plat frais et bio !" width="100%" height="225" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm" width="250px" height="150px">
+              <img id="img5" class="rounded" src="./assets/images/pexels-pixabay-461198.jpg" alt="Photo d'un bon plat frais et bio !" width="100%" height="225" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+          </div>
+          <div class="col">
+            <div id="parent" class="card shadow-sm" width="250px" height="150px">
+              <img id="img6" class="rounded" src="./assets/images/pexels-ray-piedra-1565982.jpg" alt="Photo d'un bon plat frais et bio !" width="100%" height="225" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+  <div id="exit_popup" style="text-align:center; display:none">
+    <div class="exit_popup_content">
+      <p>Vous partez déjà ? Ne manquez pas nos meilleures offres en vous inscrivant à notre newsletter !</p>
+      <form>
+        <input type="email" placeholder="Entrez votre adresse email">
+        <button type="submit">S'inscrire</button>
+      </form>
+    </br>
+      <button id="btn_close_popup" type="button" class="btn btn-danger">Fermer</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

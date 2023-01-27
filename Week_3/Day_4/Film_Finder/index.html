@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Film Finder</title>
+
+</head>
+
+<body style="margin: 10px; background-color: lightseagreen;">
+
+  <main id="main" class="">
+
+    <div class="p-4 mb-4 bg-dark rounded-5 text-center">
+      <div class="container-fluid text-primary py-5">
+        <h1 class="display-5 fw-bold">Bienvenue sur Film Finder ! 🎬</h1>
+        <h2>Le meilleur site pour trouver son film</h2>
+      </div>
+      <form id="form" class="text-center">
+        <input type="text" id="film_title" class="form-control text-center" style="width: 30%; display: block; margin: auto; margin-bottom: 10px;" placeholder="Titre de votre film">
+        <button type="submit" class="btn btn-primary" style="width: 20%;">🔍 Rechercher ➡️</button>
+      </form>
+    </div>
+
+    <div class="container">
+      <div id="show_film" class="row">
+      </div>
+    </div>
+
+  </main>
+
+  <div id="popup" style="text-align:center; display:none">
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
