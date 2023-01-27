@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>🎮 ProGame 🎮</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  </head>
+
+  <body class="bg-dark">
+
+    <header class="text-bg-dark p-3 d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <h1 class="d-flex align-items-center mb-2 mb-md-0 me-md-auto text-danger">🎮 ProGame</h1>
+
+          <a class="nav-link" href="#">Home</a>
+           &nbsp;           &nbsp;
+          <a class="nav-link" href="#pagelist">PageList</a>
+           &nbsp;           &nbsp;
+
+      <div>
+        <button class="btn btn-dark disabled">🔍</button>
+      </div>
+      <div>
+        <form id="form">
+          <input id="search" type="search" class="form-control" placeholder="Find a game ..." aria-label="Search">
+        </form>
+      </div>
+    </header>    
+
+    <section id="pageContent" class="text-danger" style="margin:15px;">Go to page list: <a href="#pagelist">PageList</a></section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script type="module" src="/main.js"></script>
+
+  </body>
+
+</html>

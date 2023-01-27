@@ -1,0 +1,29 @@
+a, a:visited {
+	text-decoration: none;
+	position: relative;
+	color: #069;
+	
+	&:after {
+		content: '';
+		height: 3px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0%;
+		background: #069;
+		transition: 0.2s;
+	}
+
+	&:hover:after {
+		width: 100%;
+	}
+	
+	&.block {
+		display: block;
+		padding: 0.5em;
+		
+		&:hover {
+			background: #eee;
+		}
+	}
+}
