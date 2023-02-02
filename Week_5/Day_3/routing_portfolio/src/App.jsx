@@ -5,7 +5,7 @@ import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Works from './pages/Works/Works';
 import NavbarHeader from './components/NavbarHeader/NavbarHeader';
-import NavbarWorks from './components/NavbarWorks';
+import NavbarWorks from './components/NavbarWorks/NavbarWorks';
 
 const App = () => {
   return (
