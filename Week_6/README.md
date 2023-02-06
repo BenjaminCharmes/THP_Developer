@@ -6,7 +6,7 @@ During this week, you will learn more advanced and almost indispensable React fe
 
 <div align="center">
 
-  [Go to Day 1️⃣ - ➡️](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_6/Day_1)
+  [Go to Day 1️⃣ & 2️⃣ - ➡️](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_6/Day_1_%26_2)
 
 </div>
 
