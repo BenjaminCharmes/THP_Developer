@@ -1,6 +1,6 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import useMediaQuery from 'react-responsive';
 import { createContext } from 'react';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
@@ -11,11 +11,18 @@ import NavbarWorks from './components/StudyCase/StudyCase';
 export const ThemeContext = createContext(null);
 
 const App = () => {
-  const [theme, setTheme] = useState("light")
+  const isDarkMode = useMediaQuery({ query: '(prefers-color-scheme: dark)' });
+  const [theme, setTheme] = useState(
+    localStorage.getItem('theme') || (isDarkMode ? 'dark' : 'light')
+  );
+
+  useEffect(() => {
+    localStorage.setItem('theme', theme);
+  }, [theme]);
 
   const toggleTheme = () => {
-    setTheme((curr) => (curr === "light" ? "dark" : "light"))
-  }
+    setTheme((curr) => (curr === 'light' ? 'dark' : 'light'));
+  };
 
   return (
     <ThemeContext.Provider value ={{ theme, toggleTheme }}>
