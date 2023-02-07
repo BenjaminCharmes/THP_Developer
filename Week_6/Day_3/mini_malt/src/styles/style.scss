@@ -1,0 +1,112 @@
+.App {  
+
+  margin: -8px;
+  margin-bottom: -15px;
+  background-color: #175397;
+
+  .Navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0A2647;
+    padding: 15px;
+
+    & a{
+      text-decoration: none;
+      color: #E5E0FF;
+      margin-right: 20px;
+      font-size: 20px;
+    }
+
+    h1 {
+      text-decoration: none;
+      color: #E5E0FF;
+      margin-right: 20px;
+      font-size: 20px;
+    }
+
+    small {
+      text-decoration: none;
+      color: #E5E0FF;
+      margin-right: 20px;
+      font-size: 15px;
+    }
+  }
+
+  main {
+    height: 100vh;
+    margin: 15px;
+    color: #cbc7e4
+  }
+
+  .Home {
+    text-align: center;
+    height: 100vh;
+    h1 {
+      font-size: 100px;
+    }
+    p {
+      font-size: 30px;
+    }
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    .form {
+      background-color: #f2f2f2;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+  
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+  
+        label {
+          font-weight: bold;
+          margin-bottom: 0.5rem;
+        }
+  
+        input,
+        textarea {
+          padding: 0.5rem;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          font-size: 1rem;
+          width: 90%;
+          transition: all 0.2s ease-in-out;
+  
+          &:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          }
+        }
+      }
+  
+      button[type="submit"] {
+        background-color: #007bff;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-top: 1rem;
+  
+        &:hover {
+          background-color: #0069d9;
+        }
+      }
+    }
+  }  
+
+}
