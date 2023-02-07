@@ -8,7 +8,7 @@ The next two days are dedicated to the creation of an agency website.
   
   [⬅️ - Back to Week 5️⃣](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_5)
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  [Go to Day 3️⃣ - ➡️](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_5/Day_3)
+  [Go to Day 3️⃣ - ➡️](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_6/Day_3)
 
 </div>
 
