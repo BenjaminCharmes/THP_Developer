@@ -8,7 +8,7 @@ Today, you will learn about the notion of "global state", and use the "Jotai" li
   
   [⬅️ - Back to Day 1️⃣ & 2️⃣](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_6/Day_1_%26_2)
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  [Go to Day 4️⃣ - ➡️](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_6/Day_4)
+  [Go to Day 4️⃣ & 5️⃣- ➡️](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_6/Day_4_%26_5)
 
 </div>
 
