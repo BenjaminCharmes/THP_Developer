@@ -14,7 +14,7 @@ This week, we will discuss the concept of "global state" of an application, and 
   
   [⬅️ - Back to Week 6️⃣](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_6)
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  [Go to Week 8️⃣ & 9️⃣ - ➡️](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_8_%26_9)
+  [Go to Week 8️⃣ - ➡️](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_8)
 
 </div>
 
