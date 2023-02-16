@@ -9,7 +9,7 @@ For today's project I invite you to visit the [SQL Bolt](https://sqlbolt.com/) w
   
   [⬅️ - Back to Day 2️⃣](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_6/Day_2)
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  [Go to Day 4️⃣ - ➡️](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_6/Day_4)
+  [Go to Day 4️⃣ & 5️⃣ - ➡️](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_6/Day_4_%26_5)
 
 </div>
 

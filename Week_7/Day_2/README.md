@@ -6,9 +6,9 @@ Today you will learn how to make PWAs and discover Mobx as the latest global sta
 
 <div align="center">
   
-  [⬅️ - Back to Day 1️⃣](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_6/Day_1)
+  [⬅️ - Back to Day 1️⃣](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_7/Day_1)
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  [Go to Day 3️⃣ - ➡️](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_6/Day_3)
+  [Go to Day 3️⃣ - ➡️](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_7/Day_3)
 
 </div>
 
