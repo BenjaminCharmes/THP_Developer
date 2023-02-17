@@ -8,7 +8,7 @@ Today you will have all the information about the final projects. In the course 
   
   [⬅️ - Back to Week 6️⃣](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_6)
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  [Go to Day 2️⃣ - ➡️](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_6/Day_2)
+  [Go to Day 2️⃣ - ➡️](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_7/Day_2)
 
 </div>
 
