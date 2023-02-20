@@ -1,0 +1,104 @@
+body {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	font-family: 'Lobster', cursive;
+	text-align: center;
+	color: #242424;
+}
+
+.title {
+	flex: 0 0 auto;
+	font-size: 3.2rem;
+	margin: 20px 0;
+}
+
+.game-grid {
+	flex: 1;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	grid-template-columns: repeat(3, 20vh);
+  	grid-template-rows: repeat(3, 20vh);
+	grid-gap: 2px;
+	margin: 20px 0;
+}
+
+.cell {
+	padding: 0;
+	margin: 0;
+	border: 1.5vh solid #181818;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.cell.filled-J1 {
+	background-image: url('./assets/circle.png');
+}
+
+.cell.filled-J2 {
+	background-image: url('./assets/cross.png');
+}
+
+#A1, #A2, #A3 {
+	border-top: none;
+}
+
+#A1 {
+	border-left: none;
+}
+
+#A3 {
+	border-right: none;
+}
+
+#B1 {
+	border-left: none;
+}
+
+#B3 {
+	border-right: none;
+}
+
+#C1, #C2, #C3 {
+	border-bottom: none;
+}
+
+#C1 {
+	border-left: none;
+}
+
+#C3 {
+	border-right: none;
+}
+
+.actions {
+	flex: 0 0 auto;
+	margin: 20px 0;
+}
+
+.replay-button {
+	padding: 10px 25px;
+	font-size: 2.5rem;
+	background-color: #C3C2C2;
+	color: #181818;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+}
+
+.end-message {
+	display: none;
+	position: fixed;
+	top: 40%;
+	padding: 10px 15px;
+	background-color: #fff;
+	box-shadow: 0 5px 30px rgba(0, 0, 0, .25);
+	border-radius: 15px;
+	font-size: 2.5rem;
+}
