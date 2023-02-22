@@ -18,6 +18,22 @@ describe("Gilded Rose", function() {
       new Item("Conjured Mana Cake", 3, 6),
     ];
 
+    const expectedItemsAfterTwoDays = [
+      new Item("+5 Dexterity Vest", 8, 18),
+      new Item("Aged Brie", 0, 2),
+      new Item("Elixir of the Mongoose", 3, 5),
+      new Item("Sulfuras, Hand of Ragnaros", 0, 80),
+      new Item("Sulfuras, Hand of Ragnaros", -1, 80),
+      new Item("Backstage passes to a TAFKAL80ETC concert", 13, 22),
+      new Item("Backstage passes to a TAFKAL80ETC concert", 8, 50),
+      new Item("Backstage passes to a TAFKAL80ETC concert", 3, 45),
+
+      // This Conjured item does not work properly yet
+      new Item("Conjured Mana Cake", 1, 2),
+    ];
+
+    const gildedRoseAfterTwoDays = new Shop(expectedItemsAfterTwoDays);
+
     const days = Number(process.argv[2]) || 2;;
     const gildedRose = new Shop(items);
 
@@ -27,6 +43,9 @@ describe("Gilded Rose", function() {
       items.forEach(item => console.log(`${item.name}, ${item.sellIn}, ${item.quality}`));
       gildedRose.updateQuality();
     }
+
+    expect(gildedRoseAfterTwoDays.items).toEqual(gildedRose.items);
+    expect(gildedRoseAfterTwoDays.sellIn).toEqual(gildedRose.sellIn);
   });
 
   it("should foo", function() {

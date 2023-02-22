@@ -49,6 +49,14 @@ const calculateQualityDifference = item => {
   return 0;
 };
 
+const isQualityBiggerThan50 = item => {
+  const isQualityBiggerThan50 = item.quality > 50;
+  const isSulfuras = item.name == "Sulfuras, Hand of Ragnaros";
+
+  if (isQualityBiggerThan50 && !isSulfuras) item.quality = 50;
+  return item.quality
+}
+
 class Shop {
   constructor(items = []) {
     this.items = items;
@@ -58,7 +66,8 @@ class Shop {
     return this.items.map(item => {
       item.sellIn += calculateSellinDifference(item);
       item.quality += calculateQualityDifference(item);
-
+      item.quality = isQualityBiggerThan50(item)
+      
       return item;
     });
   }
