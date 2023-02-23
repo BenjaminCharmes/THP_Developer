@@ -241,7 +241,7 @@ describe("Gilded Rose", function() {
 
     gildedRose.updateQuality();
 
-    expect(gildedRose.items[0].quality).toBe(22);
+    console.log(expect(gildedRose.items[0].quality).toBe(22));
     expect(gildedRose.items[1].quality).toBe(12);
   })
 
