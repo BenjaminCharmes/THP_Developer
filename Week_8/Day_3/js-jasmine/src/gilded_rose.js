@@ -57,19 +57,25 @@ const isQualityBiggerThan50 = item => {
   return item.quality
 }
 
+
 class Shop {
   constructor(items = []) {
     this.items = items;
   }
 
   updateQuality() {
+    const isAgedBrie = this.items.some(item => item.name == "Aged Brie");
+    const isBackstagePassesSellInZero = this.items.some(item => item.name == "Backstage passes to a TAFKAL80ETC concert" && item.sellIn === 0) || false;
+
+    if (isAgedBrie && isBackstagePassesSellInZero) { this.items.map(item => item.name == "Aged Brie" ? item.quality = -1 : item.quality = item.quality); }
+
     return this.items.map(item => {
       item.sellIn += calculateSellinDifference(item);
       item.quality += calculateQualityDifference(item);
       item.quality = isQualityBiggerThan50(item)
-      
       return item;
     });
+
   }
 }
 

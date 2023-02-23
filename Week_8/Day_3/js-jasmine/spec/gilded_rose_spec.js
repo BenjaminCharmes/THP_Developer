@@ -97,7 +97,6 @@ describe("Gilded Rose", function() {
       new Item("Backstage passes to a TAFKAL80ETC concert", 3, 10),
     ];
 
-    const days = Number(process.argv[2]) || 2;;
     const gildedRose = new Shop(items);
 
     gildedRose.updateQuality();
@@ -118,7 +117,6 @@ describe("Gilded Rose", function() {
       new Item("Sulfuras, Hand of Ragnaros", -1, 80),
     ];
 
-    const days = Number(process.argv[2]) || 2;;
     const gildedRose = new Shop(items);
 
     gildedRose.updateQuality();
@@ -139,7 +137,6 @@ describe("Gilded Rose", function() {
       new Item("Elixir of the Mongoose", 0, 7),
     ];
 
-    const days = Number(process.argv[2]) || 2;;
     const gildedRose = new Shop(items);
 
     gildedRose.updateQuality();
@@ -160,7 +157,6 @@ describe("Gilded Rose", function() {
       new Item("Elixir of the Mongoose", 10, 0),
     ];
 
-    const days = Number(process.argv[2]) || 2;;
     const gildedRose = new Shop(items);
 
     gildedRose.updateQuality();
@@ -181,7 +177,6 @@ describe("Gilded Rose", function() {
       new Item("Aged Brie", 2, 10),
     ];
 
-    const days = Number(process.argv[2]) || 2;;
     const gildedRose = new Shop(items);
 
     gildedRose.updateQuality();
@@ -202,7 +197,6 @@ describe("Gilded Rose", function() {
       new Item("Aged Brie", 2, 49),
     ];
 
-    const days = Number(process.argv[2]) || 2;;
     const gildedRose = new Shop(items);
 
     gildedRose.updateQuality();
@@ -223,7 +217,6 @@ describe("Gilded Rose", function() {
       new Item("Sulfuras, Hand of Ragnaros", -1, 80),
     ];
 
-    const days = Number(process.argv[2]) || 2;;
     const gildedRose = new Shop(items);
 
     gildedRose.updateQuality();
@@ -244,7 +237,6 @@ describe("Gilded Rose", function() {
       new Item("Backstage passes to a TAFKAL80ETC concert", 8, 10),
     ];
 
-    const days = Number(process.argv[2]) || 2;;
     const gildedRose = new Shop(items);
 
     gildedRose.updateQuality();
@@ -265,7 +257,6 @@ describe("Gilded Rose", function() {
       new Item("Backstage passes to a TAFKAL80ETC concert", 0, 10),
     ];
 
-    const days = Number(process.argv[2]) || 2;;
     const gildedRose = new Shop(items);
 
     gildedRose.updateQuality();
@@ -275,7 +266,7 @@ describe("Gilded Rose", function() {
   })
 
     // 9️⃣
-  it("The quality drops to 0 after the concert", function() {
+  it("The quality of Brie drops to 0 after the concert", function() {
     
     console.log("")
     console.log("The quality drops to 0 after the concert")
@@ -283,10 +274,9 @@ describe("Gilded Rose", function() {
 
     const items = [
       new Item("Backstage passes to a TAFKAL80ETC concert", 0, 20),
-      new Item("Backstage passes to a TAFKAL80ETC concert", 0, 10),
+      new Item("Aged Brie", -10, 30),
     ];
 
-    const days = Number(process.argv[2]) || 2;;
     const gildedRose = new Shop(items);
 
     gildedRose.updateQuality();
@@ -309,5 +299,25 @@ describe("Gilded Rose", function() {
 
     expect(items).toEqual(expectedResult);
   });
+
+    // 1️⃣0️⃣
+    it("When SellIn below zero quality decrease faster", function() {
+
+      console.log("")
+      console.log("When SellIn below zero quality decrease faster")
+      console.log("")
+  
+      const items = [
+        new Item("+5 Dexterity Vest", -5, 20),
+        new Item("Elixir of the Mongoose", -10, 7),
+      ];
+  
+      const gildedRose = new Shop(items);
+  
+      gildedRose.updateQuality();
+  
+      expect(gildedRose.items[0].quality).toBe(18);
+      expect(gildedRose.items[1].quality).toBe(5);
+    });
 });
 
