@@ -5,6 +5,7 @@ import { useUserStore } from '../contexts/UserContext'
 
 const Nav = observer(() => {
   const userStore = useUserStore()
+  console.log(userStore)
 
   const Logout = () => {
     userStore.logoutUser()
@@ -14,6 +15,7 @@ const Nav = observer(() => {
     return (
       <div>
         <Link to='/'>Accueil</Link>
+        <Link to='/article/write'>Écrire un article</Link>
         <button type="submit" onClick={Logout}>se déconnecter</button>
       </div>
     )

@@ -1,10 +1,9 @@
-import Cookies from 'js-cookie'
 import { runInAction } from 'mobx'
 import axios from 'axios'
 
 const BASE_URL = 'http://localhost:3000/';
 
-export function createUserStore() {
+export function getArticleStore() {
   return {
     auth_token: null,
     user: {
@@ -127,12 +126,6 @@ export function createUserStore() {
           this.hasErrors = true
         })
       } 
-    },
-
-    getUserID() {
-      if (this.authenticated) {
-        return this;
-      }
     }
-  } 
+  }
 }

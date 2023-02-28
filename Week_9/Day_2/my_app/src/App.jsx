@@ -7,7 +7,7 @@ import {RegisterPage} from "./pages/registerPage";
 import ResetPasswordPage from "./pages/resetPasswordPage";
 import NewPasswordPage from "./pages/newPasswordPage";
 import { HomePage } from "./pages/HomePage";
-
+import { WriteArticle } from "./pages/WriteArticle";
 
 export const App = observer(() => {
   const userStore = useUserStore()
@@ -32,6 +32,7 @@ export const App = observer(() => {
           <Route path="/register" element={<RegisterPage />}/>
           <Route path="/resetpassword" element={<ResetPasswordPage />}/>
           <Route path="/new_password" element={<NewPasswordPage />}/>
+          <Route path="/article/write" element={<WriteArticle />}/>
         </Routes>
       </main>
     </Router>
