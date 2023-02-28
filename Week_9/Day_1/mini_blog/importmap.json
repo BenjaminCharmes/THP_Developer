@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "count-articles": "/javascript/count-articles.js"
+  }
+}
