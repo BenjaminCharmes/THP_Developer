@@ -1,13 +1,14 @@
 import { observer } from "mobx-react-lite";
 import { useUserStore } from "./contexts/UserContext";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Nav from "./components/Nav";
+import Navb from "./components/Navb";
 import {LoginPage} from "./pages/loginPage";
 import {RegisterPage} from "./pages/registerPage";
 import ResetPasswordPage from "./pages/resetPasswordPage";
 import NewPasswordPage from "./pages/newPasswordPage";
 import { HomePage } from "./pages/HomePage";
 import { WriteArticle } from "./pages/WriteArticle";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const App = observer(() => {
   const userStore = useUserStore()
@@ -24,7 +25,7 @@ export const App = observer(() => {
 
   return (
     <Router>
-      <Nav />
+      <Navb />
       <main>
         <Routes>
           <Route path="/" element={<HomePage />}/>

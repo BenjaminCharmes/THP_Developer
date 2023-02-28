@@ -1,6 +1,8 @@
 import { observer } from 'mobx-react-lite'
 import React from 'react'
 import { useState, useEffect } from 'react'
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 export const HomePage = observer(() => {
 
@@ -26,13 +28,13 @@ export const HomePage = observer(() => {
   return (
     <>
     {articles.map((article, index) => (
-      <div key={index}>
-        <p>{article.id}</p>
-        <p>{article.title}</p>
-        <p>{article.content}</p>
-        <button>Editer</button>
-      </div>
-
+      <Card style={{ width: '18rem', margin: '10px' }}>
+        <Card.Body>
+          <Card.Title>{article.title}</Card.Title>
+          <Card.Text>{article.content}</Card.Text>
+          <Button variant="primary">Editer</Button>
+        </Card.Body>
+      </Card>
     ))}
     </>
   )
