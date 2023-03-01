@@ -9,7 +9,6 @@ import Button from 'react-bootstrap/Button';
 export const WriteArticle = observer(() => {
 
   const userStore = useUserStore()
-  console.log(userStore.getUserID())
 
   const [article, setArticle] = useState({
     title: "",
@@ -22,7 +21,6 @@ export const WriteArticle = observer(() => {
       ...article,
       [e.target.name]: e.target.value,
     });
-    console.log(article)
   }
 
   const handleSubmit = (e) => {

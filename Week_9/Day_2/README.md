@@ -8,7 +8,7 @@ Today, you're still using Rails, but this time to generate JSON! And we're going
   
   [⬅️ - Back to Day 1️⃣](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_9/Day_1)
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  [Go to Day 3️⃣ - ➡️](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_9/Day_3)
+  [Go to Day 3️⃣ to 5️⃣- ➡️](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_9/Day_3_to_5)
 
 </div>
 

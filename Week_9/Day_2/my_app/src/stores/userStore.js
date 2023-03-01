@@ -75,9 +75,11 @@ export function createUserStore() {
     async logoutUser() {
       const config = {
         headers: {
-          authorization: this.auth_token
+          authorization: `Authorization: ${this.auth_token}`
         }
       }
+
+      console.log(config.headers.authorization)
 
       try {
         await axios.delete(`${BASE_URL}users/sign_out`, config)

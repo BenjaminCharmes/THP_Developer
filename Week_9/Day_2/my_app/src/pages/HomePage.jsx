@@ -28,7 +28,7 @@ export const HomePage = observer(() => {
   return (
     <>
     {articles.map((article, index) => (
-      <Card style={{ width: '18rem', margin: '10px' }}>
+      <Card style={{ width: '18rem', margin: '10px' }} key={index}>
         <Card.Body>
           <Card.Title>{article.title}</Card.Title>
           <Card.Text>{article.content}</Card.Text>
