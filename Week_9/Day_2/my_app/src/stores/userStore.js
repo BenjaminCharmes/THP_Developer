@@ -82,7 +82,7 @@ export function createUserStore() {
       console.log(config.headers.authorization)
 
       try {
-        await axios.delete(`${BASE_URL}users/sign_out`, config)
+        await axios.delete(`${BASE_URL}users/sign_out`, config.headers.confi)
         runInAction(() => {
           this.user = {
             id: null,
@@ -130,11 +130,5 @@ export function createUserStore() {
         })
       } 
     },
-
-    getUserID() {
-      if (this.authenticated) {
-        return this;
-      }
-    }
   } 
 }
