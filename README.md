@@ -116,7 +116,7 @@ Here is the repository of all my projects from the Developer bootcamp training a
 
 ### [:heavy_check_mark: **Week 10:** Fullstack project](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_10)
 
-- [**Day**](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_10)
+- [**ImmoCoin**](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_10)
 
 ### [:heavy_check_mark: **Week 11 & 12:** Final project](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_11_%26_12)
 
