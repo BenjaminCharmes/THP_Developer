@@ -1,14 +1,8 @@
-<h1 align="center">Week 22 of The Hacking Project: Front-end JavaScript !</h1>
+<h1 align="center">Week 22: Day 106 to 110 of The Hacking Project: Fullstack project !</h1>
 
-This week, you will have to create a marketplace as a team
+In this week's project, using Rails and React, you will create a marketplace.
 
-<h2 align="center">🎉 Week 10 of the Developer training 🎉</h2>
-
-<div align="center">
-
-  [Go to Day 1️⃣ - ➡️](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_6/Day_1)
-
-</div>
+<h2 align="center">🎉 Week 10: Day 1 to 5 of the Developer training 🎉</h2>
 
 <div align="center">
   
