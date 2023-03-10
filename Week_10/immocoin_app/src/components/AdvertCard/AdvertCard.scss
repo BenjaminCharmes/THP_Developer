@@ -1,0 +1,51 @@
+@import 'src/styles/variables';
+
+  .card {
+    border-radius: 1vmax;
+    position: absolute;
+    transition: transform 800ms ease;
+
+    .card-back {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+
+      h2 {
+        grid-column: 1 / -1;
+      }
+
+      p {
+        font-size: 12px;
+        color:black;
+        font-weight: bold;
+      }
+    }
+    
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+      > img {
+        opacity: 1;
+        transform: scale(1.01);
+      }
+    }
+  }
+
+  .card > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 800ms ease,
+    transform 800ms ease;
+  }
+
+  @each $card, $properties in $card-properties {
+    .card:nth-child(#{$card}) {
+      @each $property, $value in $properties {
+        #{$property}: $value;
+      }
+    }
+  }
