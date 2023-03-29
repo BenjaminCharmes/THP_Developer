@@ -1,0 +1,133 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins.scss';
+
+.register {
+  background-color: $black;
+
+  .register-wrapper {  
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 6rem;
+
+    @include tablet {
+      margin: 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .register-form {
+      flex-basis: 50%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      @include tablet {
+        margin: -4rem 0 0 0;
+      }
+
+      @include mobile {
+        margin: -1rem 0 0 0;
+      }
+
+      form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        input {
+          background: $white;
+          color: $black;
+          width: 80%;
+          border: 0.05rem solid $white;
+          border-radius: 0.5rem;
+          font-size: 2rem;
+          padding: 0.8rem;
+          margin: 0.8rem;
+
+          @include tablet {
+            margin: 0.4rem;
+            font-size: 1.3rem;
+          }
+
+          @include mobile {
+            margin: 0;
+            font-size: 0.7rem;
+          }
+        }
+      }
+      
+      
+
+      .rgpd {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+        @include tablet {
+          margin: 0 2rem;
+        }
+        
+        input {
+          flex: 1;
+          margin: -2rem;
+          cursor: text;
+          text-align:right;
+        }
+        
+        small {
+          flex: 4;
+          text-align: justify;
+          text-justify: inter-word;
+          color: white;
+          margin: 1rem;
+
+          @include mobile {
+            margin: 0 0.5rem;
+            font-size: 0.5rem;
+          }
+        }
+      }      
+    }
+
+    .register-side {
+      flex-basis: 50%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      @include tablet {
+        margin: -4rem 0 0 0;
+      }
+
+      @include mobile {
+        margin: -4rem 0 0 0;
+      }
+
+      img {
+        width: 80%;
+        border-radius: 4.5rem;
+        margin-bottom: 1.5rem;
+
+        @include mobile {
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+

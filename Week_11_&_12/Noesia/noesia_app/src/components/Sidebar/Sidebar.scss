@@ -1,0 +1,53 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins.scss';
+
+.sidebar {
+  position: fixed;
+  margin: 2rem;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+
+   @include tablet {
+    margin: 0 0 1rem 0;
+   }
+
+  .sidebar-items {
+    display: flex;
+    justify-content: center;
+
+    .sidebar-item {
+      display: flex;
+      align-items: center;
+      flex-direction: column-reverse;
+      margin: 0 1rem;
+      padding: 0 1rem;
+
+      @include tablet {
+        margin: 0 0;
+        padding: 0 0;
+      }
+      
+      a {
+        color: $white;
+      }
+
+      svg {
+        font-size: 4rem;
+        padding: 1rem;
+        
+        @include tablet {
+          font-size: 3rem;
+        }
+      }
+      
+      &:hover {
+        svg {
+          transform: scale(1.2);
+          color: $yellow;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import '../../styles/abstracts/variables';
+
+.achievement-popup {
+  position: fixed;
+  display: flex;
+  top: 20px;
+  right: 20px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease-in-out;
+  z-index: 10001;
+
+  .achievement-popup-icon {
+    display: flex;
+    align-items: center;
+    color: $golden;
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+
+  .achievement-popup-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}

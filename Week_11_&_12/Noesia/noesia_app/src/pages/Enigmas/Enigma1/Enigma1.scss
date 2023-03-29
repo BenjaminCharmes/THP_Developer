@@ -1,0 +1,52 @@
+.mast {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  background-color: #111;
+  margin: 0;
+  font-family: "Cutive Mono", monospace;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+
+  .mast__left {
+    padding: 5%;
+  }
+
+  .mast__right {
+    padding: 5%;
+    margin: -5rem;
+
+    .mast__title {
+      font-family: "Cutive Mono", monospace;
+      font-size: 1em;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+    }
+
+    .sep {
+      border: 0;
+      width: 3em;
+      height: 1px;
+      margin: 1em 0;
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .mast__text {
+      font-family: "Cutive Mono", monospace;
+      font-size: 1em;
+      margin: 0 0 0.5em;
+      line-height: 1.5;
+    }
+  }
+}

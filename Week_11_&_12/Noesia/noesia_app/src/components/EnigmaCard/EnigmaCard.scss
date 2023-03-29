@@ -1,0 +1,57 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins.scss';
+
+.enigma-card {
+  border-radius: 1vmax;
+  position: absolute;
+  transition: transform 800ms ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: not-allowed;
+  .enigma-content {
+    
+    .enigma-id {
+      opacity:0;
+    }
+  }
+  
+  &:hover {
+    transform: scale(1.1);
+    
+    .enigma-id {
+      color: $darkblue;
+      font-weight:  bold;
+      opacity: 1;
+      transition: 400ms ease;
+    }
+  }
+}
+
+@each $card, $properties in $card-properties {
+  .enigma-card:nth-child(#{$card}) {
+    @each $property, $value in $properties {
+      #{$property}: $value;
+    }
+  }
+}
+
+@include tablet {
+  @each $card, $properties in $card-properties-tablet {
+    .enigma-card:nth-child(#{$card}) {
+      @each $property, $value in $properties {
+        #{$property}: $value;
+      }
+    }
+  }
+}
+
+@include mobile {
+  @each $card, $properties in $card-properties-mobile {
+    .enigma-card:nth-child(#{$card}) {
+      @each $property, $value in $properties {
+        #{$property}: $value;
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+  // cursor: none;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  display: block;
+  outline: none;
+  background-color: white;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+h1 {
+    font-family: "Ibarra Real Nova", serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: rgb(253, 232, 179, 0.7);
+    overflow-wrap: break-word;
+}
+
+h3 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2rem;
+  color: rgb(253, 232, 179, 0.7);
+  overflow-wrap: break-word;
+}
+
+p {
+  font-family: "Helvetica Neue";
+  font-size: 1.2rem;
+  color: #b6c4c9;
+  overflow-wrap: break-word;
+}
+
+input[type='submit']:hover,
+button:hover {
+  cursor: pointer;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+textarea {
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  &:hover {
+    cursor: text;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+  }
+}
+
+

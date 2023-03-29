@@ -1,0 +1,65 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins.scss';
+
+.cursor {
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 0.05rem solid $yellow;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 100ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+    z-index: 10000;
+}
+
+.cursor::after {
+    content: '';
+    position: absolute;
+    top: -0.5rem;
+    left: -0.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 0.5rem solid $lightblue;
+    opacity: .5;
+    border-radius: 50%;
+    animation: cursorAnim2 .5s infinite alternate
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 0.05rem solid $yellow;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+

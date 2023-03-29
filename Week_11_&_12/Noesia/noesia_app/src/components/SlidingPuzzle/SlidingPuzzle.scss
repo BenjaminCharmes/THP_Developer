@@ -1,0 +1,41 @@
+.sliding-puzzle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board {
+  position: relative;
+  border: 1px solid #000;
+  margin: 2rem 0;
+}
+
+.tile {
+  position: absolute;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-repeat: no-repeat;
+}
+
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  button{
+    padding: 0.5rem 1rem;
+  }
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}

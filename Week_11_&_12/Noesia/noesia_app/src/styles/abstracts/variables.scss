@@ -1,0 +1,105 @@
+$black: rgb(20, 20, 20);
+$red:#ef4444;
+$blueflash: #03e9f4;
+$yellow: rgb(253, 232, 179, 0.7);
+$lightblue: #b6c4c9;
+$darkblue: #181924;
+$white: rgb(255, 255, 255, 1);
+$gradient: linear-gradient(to right, $yellow, $lightblue, $darkblue, $white);
+$green: green;
+
+$golden: #efb509;
+$lemondrop: #ffec5c;
+
+$peach: #ea9999;
+$purple: #800080;
+
+$turquoise: #31a2ac;
+$periwinkie: #d0e1f9;
+
+$fireCount: 100;
+$sunSize: 24rem;
+
+$card-properties: (
+    1: (border-radius: 50%, background-color: $white, height: 5%, width: 3%, left: 10%, top: 50%),
+    2: (border-radius: 50%, background-color: $white, height: 5%, width: 3%, left: 20%, top: 80%),
+    3: (border-radius: 50%, background-color: $white, height: 5%, width: 3%, left: 32%, top: 74%),
+    4: (border-radius: 50%, background-color: $white, height: 5%, width: 3%, left: 28%, top: 54%),
+    5: (border-radius: 50%, background-color: $white, height: 5%, width: 3%, left: 40%, top: 20%),
+    6: (border-radius: 50%, background-color: $white, height: 5%, width: 3%, left: 48%, top: 37%),
+    7: (border-radius: 50%, background-color: $white, height: 5%, width: 3%, left: 45%, top: 75%),
+    8: (border-radius: 50%, background-color: $white, height: 5%, width: 3%, left: 60%, top: 56%),
+    9: (border-radius: 50%, background-color: $white, height: 5%, width: 3%, left: 68%, top: 56%),
+    10: (border-radius: 50%, background-color: $white, height: 5%, width: 3%, left: 66%, top: 25%),
+    // 11: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 81%, top: 22%),
+    // 12: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 67%, top: 14%),
+    // 13: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 61%, top: 20%),
+    // 14: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 45%, top: 18%),
+    // 15: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 24%, top: 16%),
+    // 16: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 12%, top: 22%),
+    // 17: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 6%, top: 31%),
+    // 18: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 12%, top: 40%),
+    // 19: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 22%, top: 29%),
+    // 20: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 35%, top: 35%)
+    // 21: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left:  47%, top: 26%),
+    // 22: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 61%, top: 40%),
+    // 23: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 69%, top: 28%),
+    // 24: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 83%, top: 34%),
+    // 25: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 82%, top: 50%)
+);
+
+$card-properties-tablet: (
+    1: (border-radius: 50%, background-color: $white, height: 4%, width: 6%, left: 10%, top: 50%),
+    2: (border-radius: 50%, background-color: $white, height: 4%, width: 6%, left: 20%, top: 80%),
+    3: (border-radius: 50%, background-color: $white, height: 4%, width: 6%, left: 32%, top: 74%),
+    4: (border-radius: 50%, background-color: $white, height: 4%, width: 6%, left: 28%, top: 54%),
+    5: (border-radius: 50%, background-color: $white, height: 4%, width: 6%, left: 40%, top: 20%),
+    6: (border-radius: 50%, background-color: $white, height: 4%, width: 6%, left: 48%, top: 37%),
+    7: (border-radius: 50%, background-color: $white, height: 4%, width: 6%, left: 45%, top: 75%),
+    8: (border-radius: 50%, background-color: $white, height: 4%, width: 6%, left: 60%, top: 56%),
+    9: (border-radius: 50%, background-color: $white, height: 4%, width: 6%, left: 78%, top: 42%),
+    10: (border-radius: 50%, background-color: $white, height: 4%, width: 6%, left: 66%, top: 25%),
+    // 11: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 81%, top: 22%),
+    // 12: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 67%, top: 14%),
+    // 13: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 61%, top: 20%),
+    // 14: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 45%, top: 18%),
+    // 15: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 24%, top: 16%),
+    // 16: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 12%, top: 22%),
+    // 17: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 6%, top: 31%),
+    // 18: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 12%, top: 40%),
+    // 19: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 22%, top: 29%),
+    // 20: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 35%, top: 35%)
+    // 21: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left:  47%, top: 26%),
+    // 22: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 61%, top: 40%),
+    // 23: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 69%, top: 28%),
+    // 24: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 83%, top: 34%),
+    // 25: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 82%, top: 50%)
+);
+
+$card-properties-mobile: (
+    1: (border-radius: 50%, background-color: $white, height: 3%, width: 6%, left: 20%, top: 25%),
+    2: (border-radius: 50%, background-color: $white, height: 3%, width: 6%, left: 10%, top: 40%),
+    3: (border-radius: 50%, background-color: $white, height: 3%, width: 6%, left: 26%, top: 78%),
+    4: (border-radius: 50%, background-color: $white, height: 3%, width: 6%, left: 28%, top: 60%),
+    5: (border-radius: 50%, background-color: $white, height: 3%, width: 6%, left: 44%, top: 20%),
+    6: (border-radius: 50%, background-color: $white, height: 3%, width: 6%, left: 48%, top: 37%),
+    7: (border-radius: 50%, background-color: $white, height: 3%, width: 6%, left: 65%, top: 75%),
+    8: (border-radius: 50%, background-color: $white, height: 3%, width: 6%, left: 68%, top: 56%),
+    9: (border-radius: 50%, background-color: $white, height: 3%, width: 6%, left: 80%, top: 46%),
+    10: (border-radius: 50%, background-color: $white, height: 3%, width: 6%, left: 86%, top: 30%),
+    // 11: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 81%, top: 22%),
+    // 12: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 67%, top: 14%),
+    // 13: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 61%, top: 20%),
+    // 14: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 45%, top: 18%),
+    // 15: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 24%, top: 16%),
+    // 16: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 12%, top: 22%),
+    // 17: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 6%, top: 31%),
+    // 18: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 12%, top: 40%),
+    // 19: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 22%, top: 29%),
+    // 20: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 35%, top: 35%)
+    // 21: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left:  47%, top: 26%),
+    // 22: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 61%, top: 40%),
+    // 23: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 69%, top: 28%),
+    // 24: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 83%, top: 34%),
+    // 25: (border-radius: 50%, background-color: $white, height: 6%, width: 6%, left: 82%, top: 50%)
+);

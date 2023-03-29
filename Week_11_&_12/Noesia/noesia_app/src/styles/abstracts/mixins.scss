@@ -1,0 +1,33 @@
+@import './variables.scss';
+
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 960px) {
+    @content;
+  }
+}
+
+@mixin white-background($opacity) {
+  background-color: rgba($white, $opacity);
+}
+@mixin blueflash-background($opacity) {
+  background-color: rgba($blueflash, $opacity);
+}
+@mixin black-background($opacity) {
+  background-color: rgba($black, $opacity);
+}
+
+
+@mixin white-border($opacity) {
+  border: 0.05rem solid rgba($white, $opacity);
+}
+
+@mixin black-box-shadow($opacity) {
+  box-shadow: 0.15rem 0.15rem 0.15rem rgba($black, $opacity);
+}
+

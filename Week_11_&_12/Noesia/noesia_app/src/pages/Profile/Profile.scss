@@ -1,0 +1,312 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins.scss';
+
+.profile {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: $white;
+
+  .profile-wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .profile-left {
+      grid-column: 1;
+      border-right: 0.15rem solid $white;
+
+      @include mobile {
+        border: none;
+      }
+
+      .profile-left-top {
+        margin-bottom: 1rem;
+        border-bottom: 0.15rem solid $white;
+
+        @include mobile {
+          margin: 0;
+        }
+
+        .profile-left-top-info {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          
+          .profile-left-top-info-picture {
+
+            .profile-picture {
+              width: 8rem;
+              height: 8rem;
+              border-radius: 20%;
+              margin: 1.5rem;
+              border: 0.05rem solid $white;
+
+              @include mobile {
+                width: 6rem;
+                height: 6rem;
+                margin: .5rem;
+              }
+            }
+          }
+
+          .profile-left-top-info-name {
+            .profile-name {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 3rem;
+
+              @include mobile {
+                font-size: 1rem;
+              }
+            }
+
+            .button-link {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+
+        .profile-left-top-player-caract {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          margin: 1.5rem;
+
+          @include mobile {
+            margin:.5rem;
+          }
+          
+          .container{
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+            @include mobile {
+              margin: 0.5rem;
+              height: 80%;
+              width: 80%;
+            }
+          
+            .title{
+              text-align: center;
+            }
+          
+            &:first-of-type{
+          
+              background-color: none;
+          
+              .rail{ stroke: $periwinkie; }
+
+              .progress{ stroke: $turquoise; }
+          
+              .icon{ color: $turquoise; }
+          
+            }
+          
+            &:nth-of-type(2){
+          
+              background-color: none;
+          
+              .rail{ stroke: $peach; }
+
+              .progress{ stroke: $purple; }
+          
+              .icon{ color: $purple; }
+          
+            }
+          
+            &:nth-of-type(3){
+          
+              background-color: none;
+          
+              .rail{ stroke: $lemondrop; }
+
+              .progress{ stroke: $golden; }
+          
+              .icon{ color: $golden; }
+          
+            }
+          
+          }
+          
+          .gauge-container{
+          
+            display: inline-block;
+            position: relative;
+            width: 70%;
+
+            .gauge {
+          
+              position: relative;
+              display: block;
+              
+              circle{ stroke-width: 15; }
+          
+              .rail{ fill: transparent; }
+          
+              .progress{
+          
+                fill: transparent;
+                stroke-linecap: round;
+                transform-origin: center center;
+                transform: rotate(-90deg);
+              } 
+            }
+          
+            .center{
+              display: inline-block;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              font-weight: 300;
+              
+              &.percentage { 
+                font-size: 1.5em; 
+
+                @include mobile {
+                  font-size: 1rem;
+                }
+              }
+              
+              &.icon{ font-size: 1.5em; }
+          
+              .percentSymbol{ font-size: 1em; }
+              
+              .value{ font-size: 1em; }
+          
+            }
+          }
+        }
+      }
+      
+      .profile-left-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+
+        @include mobile {
+          margin: 0 0 1rem 0 ;
+          font-size: 1rem;
+        }
+
+        h2 {
+          margin: 1rem 0 3rem 0;
+  
+          @include mobile {
+            margin: 1rem;
+          }
+        }
+
+        .profile-left-bottom-caract {
+          display: flex;
+          justify-content: space-between;
+          width: 60%;
+          padding: 1.7rem;
+
+          p {
+            color: $white;
+            text-shadow: 0.2rem 0rem 0.2rem $black;
+          }
+
+          @include mobile {
+            padding: 0.5rem;
+          }
+
+          .discipline {
+            color: purple;
+          }
+          .ingenuity {
+            color: orange;
+          }
+          .willpower {
+            color: rgb(120, 120, 120);
+          }
+          .concentration {
+            color: rgb(12, 12, 205);
+          }
+          .guile {
+            color: red;
+          }
+          .dexterity {
+            color: green;
+          }
+          
+          p {
+            display: inline-flex;
+            svg {
+              margin-right: 1rem;
+            }
+
+            @include mobile {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+
+    }
+    
+    .profile-right {
+      grid-column: 2;
+
+      @include mobile {
+        border-top: 0.15rem solid $white;
+      }
+
+      .profile-right-header {
+        margin: 1.5rem;
+        font-size: 1.5rem;
+
+        @include mobile {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1rem;
+        }
+      }
+
+      .profile-right-cards {
+        .profile-right-card {
+          border: 0.15rem solid $white;
+          margin: 1.5rem;
+          padding: 1.5rem;
+          border-radius: 1rem;
+          
+          p {
+            color: $white;
+            text-shadow: 0.2rem 0rem 0.1rem $black;
+          }
+        }
+      }
+    }
+  }
+
+  .profile-background {
+    background-size: 100vmax;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+    position: absolute;
+    z-index: -1;
+    @include tablet {
+      object-fit: cover;
+    }
+  }
+}
+

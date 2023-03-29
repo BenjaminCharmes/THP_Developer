@@ -1,0 +1,32 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins.scss';
+
+.button {
+  button {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem;
+    backdrop-filter: blur(0.2rem);
+    @include white-background(0.05);
+    @include white-border(0.1);
+    @include black-box-shadow(0.1);
+    border-radius: 6px;
+    color: $white;
+    cursor: pointer;
+    transition: 
+      background-color 400ms, 
+      border-color 400ms;
+
+    &:hover {
+      color: $darkblue;
+      background-color: $yellow;
+      @include white-border(0.2);
+    }
+
+    span {
+      font-family: "Helvetica Neue";
+      font-weight: bold;
+    }
+  }
+}

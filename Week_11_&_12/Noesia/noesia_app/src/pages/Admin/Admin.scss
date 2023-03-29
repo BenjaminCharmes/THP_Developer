@@ -1,0 +1,111 @@
+@import '../../styles/abstracts/variables';
+
+.admin-wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  background-color: black;
+  color: white;
+
+  .admin-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 1;
+    height: 100vh;
+    border-right: 2px solid $yellow;
+
+    h2 {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      font-size: 2rem;
+      margin-top: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid $yellow;
+    }
+
+    button {
+      width: 8rem;
+      margin: 1rem;
+    }
+  }
+  .admin-right {
+    display: grid;
+    grid-column: 2;
+    grid-template-rows: 1fr 1fr;
+    
+    .admin-right-top-display {
+      grid-row: 1;
+      border-bottom: 2px solid $yellow;
+
+      .admin-right-top-header {
+        display: flex;
+        justify-content: center;
+        margin: 1.5rem;
+
+        h3 {
+          margin-right: 1rem;
+        }
+      }
+
+      .admin-card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        overflow-x: auto;
+      
+        .admin-card {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          width: 15%;
+          margin-left: 1.5rem;
+          margin-right: 1.5rem;
+          margin-bottom: 1rem;
+          padding: 1rem;
+          border: 1px solid $yellow;
+        }
+
+        h3 {
+          font-size: 1rem;
+        }
+      }
+    }
+    .admin-right-bottom-display {
+      grid-row: 2;
+
+      h3 {
+        display: flex;
+        justify-content: center;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+        input {
+          margin: 0.6rem;
+          padding: 0.3rem;
+          color: black;
+          background-color: $yellow;
+          border-radius: 0.5rem;
+        }
+        input::placeholder {
+          color: black;
+        }
+
+        select {
+          margin: 0.8rem;
+          color: black;
+          background-color: $yellow;
+          border-radius: 1rem;
+        }
+      }
+    }
+  }
+}

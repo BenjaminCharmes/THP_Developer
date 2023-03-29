@@ -1,0 +1,118 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins.scss';
+
+.button-door {
+  button {
+    all: unset;
+    position: relative;
+    display: inline-block;
+    margin: 1rem 2rem;
+    padding: .5rem 4rem;
+    color: $white;
+    font-size: 2rem;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 0.25rem;
+
+    @include tablet {
+      margin: .5rem;
+      padding: 1.5rem 3rem;
+    }
+
+    @include mobile {
+      margin: 0;
+      padding: .5rem 1.5rem;
+      font-size: 1.5rem;
+    }
+  
+    span {
+      position: absolute;
+      display: block;
+      
+  
+      &:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 0.15rem;
+        background: linear-gradient(90deg, transparent, $yellow);
+        animation: btn-anim1 1s linear infinite;
+      }
+  
+      &:nth-child(2) {
+        top: -100%;
+        right: 0;
+        width: 0.15rem;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, $darkblue);
+        animation: btn-anim2 1s linear infinite;
+        animation-delay: 0.25s;
+      }
+  
+      &:nth-child(3) {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 0.15rem;
+        background: linear-gradient(270deg, transparent, $yellow);
+        animation: btn-anim3 1s linear infinite;
+        animation-delay: 0.5s;
+      }
+  
+      &:nth-child(4) {
+        bottom: -100%;
+        left: 0;
+        width: 0.15rem;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, $darkblue);
+        animation: btn-anim4 1s linear infinite;
+        animation-delay: 0.75s;
+      }
+    }
+  
+    &:hover {
+      background: $yellow;
+      color: $darkblue;
+      border-radius: 1rem;
+      box-shadow: 0 0 0.25rem $yellow, 0 0 1.5rem $yellow, 0 0 3rem $yellow, 0 0 6rem $yellow;
+    }
+  }
+  
+  
+  @keyframes btn-anim1 {
+    0% {
+    left: -100%;
+    }
+    50%, 100% {
+    left: 100%;
+    }
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+    top: -100%;
+    }
+    50%, 100% {
+    top: 100%;
+    }
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+    right: -100%;
+    }
+    50%, 100% {
+    right: 100%;
+    }
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+    bottom: -100%;
+    }
+    50%, 100% {
+    bottom: 100%;
+    }
+  }
+}

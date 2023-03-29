@@ -1,0 +1,202 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins.scss';
+
+.home-background {
+  
+  .home {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+
+    .home-items {
+      margin-left: clamp(4rem, 20vw, 48rem);
+      position: relative;
+      z-index: 3;
+
+      &:hover > .home-item {
+        opacity: 0.3;
+      }
+
+      &:hover > .home-item:hover {
+        opacity: 1;
+      }
+
+      // &:hover ~ .home-background-pattern {
+      //   background-size: 12vmin 12vmin;
+      //   opacity: 0.5;
+      // }
+
+      .home-item {
+        color: $white;
+        font-size: clamp(3rem, 6vw, 8rem);
+        font-family: "Ibarra Real Nova", serif;
+        font-weight: bold;
+        display: flex;
+        text-shadow: 0.1rem 0.1rem 0.2rem $black;
+        text-decoration: none;
+        padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+        transition: opacity 400ms ease,
+        transform 400ms ease;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        position: relative;
+        z-index: 4;
+
+        &:hover {
+          opacity: 1;
+          transform: scale(1.05);
+        }
+
+        a {
+          text-decoration: none;
+          color: $white;
+          @include mobile {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+     
+
+    // .home-background-pattern {
+    //   height: 100vh;
+    //   width: 100vw;
+    //   background-image: 
+    //   radial-gradient(
+    //     rgba(255, 255, 255, 0.3) 9%,
+    //     transparent 9%
+    //   );
+    //   background-position: 0% 0%;
+    //   background-size: 10vmin 10vmin;
+    //   position: absolute;
+    //   z-index: 1;
+      
+    //   transition: 
+    //     opacity 800ms ease,
+    //     background-size 800ms ease,
+    //     background-position 800ms ease;
+    // }
+
+    .home-background-image {
+      background-size: 100vmax;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0.85;
+      position: absolute;
+      z-index: 0;
+      @include tablet {
+        object-fit: cover;
+      }
+    }
+  }
+
+  // .home[data-active-index="0"] > .home-background-pattern {
+  //   background-position: 0% -25%;
+  // }
+  
+  // .home[data-active-index="1"] > .home-background-pattern {
+  //   background-position: 0% -50%;
+  // }
+    
+  // .home[data-active-index="2"] > .home-background-pattern {
+  //   background-position: 0% -75%;
+  // }
+
+  .story-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    @include white-background(0.5);
+    
+    .story-content {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50%;
+      height: 100%;
+      background-color: transparent;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      padding: 3rem 2rem;
+      z-index: 1;
+      
+      @include mobile {
+        width: 75%;
+        padding: 1rem 1rem;
+      }
+
+      .story-title {
+        flex: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        h1 {
+
+          @include mobile {
+            font-size: 2.5rem;
+          }
+        }
+      }
+
+      .story-plot {
+        flex: 5;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        text-justify: inter-word;
+        line-height: 2;
+
+        @include mobile {
+          line-height: 1.8;
+        }
+
+        p {
+          color: $white;
+          strong {
+            text-shadow: 0.1rem 0.1rem 0.2rem $black;
+          }
+
+          @include mobile {
+            font-size: 0.8rem;
+          }
+        }
+      }
+  
+      .story-btn {
+        flex: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4rem 0 0 0;
+
+        @include mobile {
+          padding: 2rem 0 0 0;
+        }
+      }
+    }
+  }
+
+  .story-background-image {
+    background-size: 100vmax;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+    position: absolute;
+    z-index: 0;
+
+    @include tablet {
+      object-fit: cover;
+    }
+  }
+}
+

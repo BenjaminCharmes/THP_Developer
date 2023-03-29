@@ -1,0 +1,46 @@
+@import 'src/styles/abstracts/variables';
+@import '../../../styles/abstracts/mixins.scss';
+
+.enigma2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  color: $white;
+  background-color: $black;
+
+  .enigma2-top {
+    flex: 7;
+    height: 100%;
+    width: 100%;
+    border: 0.1rem solid $white;
+  }
+
+  .enigma2-bottom {
+    flex: 5;
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    .enigma2-bottom-left {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0.1rem solid $white;
+      .buttons {
+
+      }
+    }
+
+    .enigma2-bottom-right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0.1rem solid $white;
+    }
+  }
+}

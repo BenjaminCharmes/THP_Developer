@@ -1,0 +1,182 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins.scss';
+
+.door {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .door-content {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+
+    @include tablet {
+      flex-direction: column;
+    }
+
+    .door-buttons {
+      height: 100vh;
+      width: 100vw;
+      flex: 2;
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      
+      .buttons-left {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5rem;
+        margin: 0 0 0 3rem;
+
+        @include tablet {
+          flex-direction: row;
+          margin: 0;
+          gap: 2rem;
+        }
+
+        .buttons-animate {
+          display: flex; 
+          justify-content: center;
+          align-items: center;
+          flex-direction: row-reverse;
+        }
+      }
+
+      .buttons-right {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5rem;
+        margin: 0 3rem 0 0;
+
+        @include tablet {
+          flex-direction: row;
+          margin: 0;
+          gap: 2rem;
+        }
+
+        .buttons-animate {
+          display: flex; 
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+        }
+      }
+    }
+
+    .door-code {
+      flex: 3;
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: transparent;
+      margin: 3rem;
+      padding: 3rem 3rem 3rem 3rem;
+      gap: 3.5rem;
+
+      .hidden_achievement {
+        button {
+          margin-bottom: -1rem;
+        }
+      }
+
+      @include tablet {
+        margin: 0;
+        padding: 0;
+        gap: 0;
+      }
+      
+      .door-screen {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        background-color: $black;
+        border-radius: 1rem;
+        height: 10vh;
+
+        @include tablet {
+          height: 6vh;
+        }
+
+        input {
+          color: $white;
+          background-color: $black;
+          border-radius: 1rem;
+          margin: .5rem;
+          width: 28vw;
+          height: 8vh;
+          text-align: center;
+          font-size: 2rem;
+
+          @include tablet {
+            height: 4vh;
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      .door-script {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 1rem;
+        padding: 1rem;
+        background-color: transparent;
+        
+        @include tablet {
+          margin: 2rem 4rem;
+        }
+
+        @include mobile {
+          margin: 1rem 2rem;
+        }
+
+        p {
+          color: $white;
+          text-align: justify;
+          text-justify: inter-word;
+          overflow-wrap: break-word;
+          font-size: 1.4rem;
+          text-shadow: 0.2rem 0.2rem 0.4rem $black;
+
+          @include mobile {
+            font-size: 0.9rem;
+          }
+        }
+      }
+
+      .door-validate {
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+  }
+
+  .door-background {
+    background-size: 100vmax;
+    object-fit: cover;
+    height: 145%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 1;
+    z-index: -1;
+    transform: scale(1.1);
+
+    @include tablet {
+      transform: scale(1.2);
+    }
+  }
+}

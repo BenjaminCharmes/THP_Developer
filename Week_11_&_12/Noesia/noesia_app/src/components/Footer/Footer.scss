@@ -1,0 +1,39 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins.scss';
+
+.footer {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  justify-content: space-between;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 1rem;
+  padding: 1rem;
+  background-color: transparent;
+  z-index: 6;
+
+  svg {
+    color: $white;
+    margin-right: 2rem;
+
+    @include tablet {
+      display: none;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    color: $white;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+}

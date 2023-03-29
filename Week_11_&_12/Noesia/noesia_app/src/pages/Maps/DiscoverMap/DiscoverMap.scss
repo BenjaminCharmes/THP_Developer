@@ -1,0 +1,33 @@
+@import '../../../styles/abstracts/variables';
+@import '../../../styles/abstracts/mixins.scss';
+
+.discover-map {
+  background-color: $black;
+  color: $white;
+  height: 100vh;
+  width: 100vw;
+
+    .enigmas {
+      flex: 5;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+    }
+
+
+  .discover-background-image {
+    background-size: 100vmax;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+    position: absolute;
+    z-index: 0;
+
+    @include tablet {
+      object-fit: cover;
+    }
+  }
+}

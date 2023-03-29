@@ -1,0 +1,96 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins.scss';
+
+.ui {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  
+  .cover {
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    width: $sunSize - 1rem;
+    height: $sunSize - 1rem;
+    background: $black;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    box-shadow: 0 0 3rem 0.6rem rgba(200, 0, 0, 0.5);
+  }
+
+  .sun {
+    position: absolute;
+    width: 30%;
+    height: 25%;
+    transform: translate(-50%, -50%);
+    background: $black;
+    filter: blur(0.6rem) contrast(15);
+    
+    .sun_border {
+      position: absolute;
+      top: 30%;
+      left: 0%;
+      width: $sunSize;
+      height: $sunSize;
+      border: 1rem solid yellow;
+      border-radius: 100%;
+      box-sizing: border-box;
+      transform: translate(-50%, -50%);
+    }
+
+    .sun_fire {
+      position: absolute;
+      top: 30%;
+      left: 0%;
+      transform-origin: 0 0;
+      
+      .sun_fire_inner {
+        box-sizing: border-box;
+      }
+      
+      @for $i from 1 through $fireCount {
+        &:nth-child(#{$i}) {
+          animation: sunFire #{random(10000) + 5000}ms infinite linear;
+          
+          .sun_fire_inner {
+            $size: #{random(100) + 40}px;
+            width: $size;
+            height: $size;
+            border-top: #{random(10) + 5}px solid orange;
+            border-right: #{random(10) + 5}px solid orange;
+            border-bottom: #{random(10) + 5}px solid orange;
+            border-left: #{random(10) + 5}px solid orange;
+            border-radius: #{random(70) + 10 + '%'} #{random(70) + 10 + '%'} #{random(70) + 10 + '%'} #{random(70) + 10 + '%'};
+            animation: sunFireInner #{random(3000) + 2000}ms infinite alternate linear;
+          }
+        }
+      }
+    }    
+  }
+}
+  
+@keyframes sunFire {
+
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes sunFireInner {
+
+  0% {
+    transform: translate(calc($sunSize / 2) - 110, -50%) rotateZ(0deg);
+  }
+
+  50% {
+    transform: translate(calc($sunSize / 2) - 60, -50%) rotateZ(180deg);
+  }
+
+  100% {
+    transform: translate(calc($sunSize / 2) - 110, -50%) rotateZ(360deg);
+  }
+}
