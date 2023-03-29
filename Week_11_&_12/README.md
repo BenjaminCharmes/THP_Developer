@@ -7,12 +7,6 @@ In this repo is the project at the end of the two-week final project. However, i
 <h2 align="center">🎉 Week 11 & 12: Day 1 to 10 of the Developer training 🎉</h2>
 
 <div align="center">
-
-  [Go to Day 1️⃣ - ➡️](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_6/Day_1)
-
-</div>
-
-<div align="center">
   
   [⬅️ - Back to Week 1️⃣1️⃣](https://github.com/BenjaminCharmes/THP_Developer/tree/main/Week_11)
 
